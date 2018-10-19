@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 1</title>
+</head>
+<body>
+<h1> Personal information </h1>
+<form method="post" action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+    <fieldset>
+        <legend>Personal information</legend>
+        <label for="surname">Surname:</label>
+        <input name="surname" id="surname" type="text"/>
+        <br/>
+        <label for="name">Name:</label>
+        <input name="name" id="name" type="text"/>
+        <br/>
+        <label for="age">How old are you:</label>
+        <input max="99" maxlength="2" min="5" minlength="1" value="18" name="age" id="age" type="number"/>
+        <br/>
+        <label for="birth">Full date of birth:</label>
+        <input name="birth" id="birth" type="date"/>
+        <br/>
+        <label for="terms">I accept the terms of the agreement</label>
+        <input name="terms" id="terms" type="checkbox"/>
+        <br/>
+    </fieldset>
+
+    <fieldset>
+        <legend>Registration</legend>
+        <label for="email">Email:</label>
+        <input required name="email" id="email" type="email"/>
+        <br/>
+        <label for="pass">Password:</label>
+        <input required autocomplete="off" name="pass" id="pass" type="password"/>
+        <br/>
+    </fieldset>
+
+    <fieldset>
+        <legend>
+            An interesting fact about you!
+        </legend>
+        <label>Do you love cats?</label> <br>
+        <label for="cats_yes">Yes</label>
+        <input name="cats" id="cats_yes" type="radio" value="Yes"/> <br>
+        <label for="cats_not">Not</label>
+        <input name="cats" id="cats_not" type="radio" value="Not"/> <br>
+        <label for="color">What is your fav color?</label> <br>
+        <input id="color" name="color" type="color"/> <br>
+        <label for="type">What time do you go to bed?</label> <br>
+        <input id="type" name="type" type="time" step="1"/> <br>
+        <label for="brand">What is your fav brand of cars?</label> <br>
+        <select id="brand" name="brand" size="3">
+            <option>BMW</option>
+            <option>Audi</option>
+            <option>Lada</option>
+        </select>
+        <br>
+        <label for="rate">How do you rate our work?</label> <br>
+        <input id="rate" name="rate" type="range">
+    </fieldset>
+
+    <fieldset>
+        <legend>Your comments:</legend>
+        <textarea id="comment" name="comment" rows="2" placeholder="Comments"></textarea>
+    </fieldset>
+
+    <br>
+    <input type="submit" value="Submit"><br>
+
+</form>
+</body>
+</html>
