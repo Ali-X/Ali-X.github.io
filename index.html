@@ -14,27 +14,22 @@
             <label for="surname">Surname:</label>
             <input name="surname" id="surname" type="text"/>
         </div>
-        <br/>
         <div>
             <label for="name">Name:</label>
             <input name="name" id="name" type="text"/>
         </div>
-        <br/>
         <div>
             <label for="age">How old are you:</label>
             <input max="99" maxlength="2" min="5" minlength="1" value="18" name="age" id="age" type="number"/>
         </div>
-        <br/>
         <div>
             <label for="birth">Full date of birth:</label>
             <input name="birth" id="birth" type="date"/>
         </div>
-        <br/>
         <div>
             <label for="terms">I accept the terms of the agreement</label>
             <input name="terms" id="terms" type="checkbox"/>
         </div>
-        <br/>
     </fieldset>
 
     <fieldset>
@@ -44,31 +39,33 @@
             <label for="email">Email:</label>
             <input required name="email" id="email" type="email"/>
         </div>
-        <br/>
         <div>
             <label for="pass">Password:</label>
             <input required autocomplete="off" name="pass" id="pass" type="password"/>
         </div>
-        <br/>
     </fieldset>
 
     <fieldset>
         <legend>An interesting fact about you!</legend>
 
         <div>
-            <label>Do you love cats?</label> <br>
-            <label for="cats_yes">Yes</label>
-            <input name="cats" id="cats_yes" type="radio" value="Yes"/> <br>
-            <label for="cats_not">Not</label>
-            <input name="cats" id="cats_not" type="radio" value="Not"/> <br>
+            <label>Do you love cats?</label>
+            <div>
+                <label for="cats_yes">Yes</label>
+                <input name="cats" id="cats_yes" type="radio" value="Yes"/>
+            </div>
+            <div>
+                <label for="cats_not">Not</label>
+                <input name="cats" id="cats_not" type="radio" value="Not"/>
+            </div>
         </div>
         <div>
             <label for="color">What is your fav color?</label> <br>
-            <input id="color" name="color" type="color"/> <br>
+            <input id="color" name="color" type="color"/>
         </div>
         <div>
             <label for="type">What time do you go to bed?</label> <br>
-            <input id="type" name="type" type="time" step="1"/> <br>
+            <input id="type" name="type" type="time" step="1"/>
         </div>
         <div>
             <label for="brand">What is your fav brand of cars?</label> <br>
@@ -78,7 +75,6 @@
                 <option selected>Lada</option>
             </select>
         </div>
-        <br>
         <div>
             <label for="rate">How do you rate our work?</label> <br>
             <input id="rate" name="rate" type="range">
